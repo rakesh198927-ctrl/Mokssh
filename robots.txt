@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /access/
+Disallow: /cancel/
+Sitemap: https://mokssh.in/sitemap.xml

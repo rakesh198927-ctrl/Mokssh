@@ -1,0 +1,9 @@
+# Netlify redirects — or configure same in your hosting
+# ewigfintech.com → mokssh.in for consumer traffic
+# (Configure at DNS level or hosting panel)
+
+# Utility redirects
+/app         https://app.mokssh.in        301
+/invest      https://invest.mokssh.in     301
+/partner     https://partner.mokssh.in    301
+/demo        /index.html#product          301

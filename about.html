@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About — Mokssh</title>
+<link rel="stylesheet" href="style.css"/>
+<style>
+.founder-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; }
+.founder-photo { width:100%; aspect-ratio:1; background:linear-gradient(155deg, var(--teal-pale) 0%, var(--amber-pale) 100%); border:0.5px solid rgba(22,153,120,0.18); border-radius:var(--radius-lg); display:flex; align-items:center; justify-content:center; }
+.founder-initial { font-family:'Cormorant Garamond',serif; font-size:8rem; font-weight:600; color:var(--teal-mid); opacity:0.6; }
+.quote-block { border-left:2px solid var(--amber); padding-left:28px; margin:32px 0; }
+.quote-block p { font-family:'Cormorant Garamond',serif; font-size:1.4rem; line-height:1.5; color:var(--ink); font-style:italic; }
+.contact-card { background:var(--white); border:0.5px solid var(--cream-dark); border-radius:var(--radius-lg); padding:40px; margin-top:60px; box-shadow:0 8px 30px rgba(20,48,42,0.04); }
+.contact-card h3 { color:var(--ink); margin-bottom:20px; }
+.contact-row { display:flex; gap:12px; align-items:center; padding:12px 0; border-bottom:0.5px solid var(--cream-dark); }
+.contact-row:last-child { border-bottom:none; }
+.contact-label { font-size:0.78rem; letter-spacing:0.08em; color:var(--ink-light); text-transform:uppercase; min-width:100px; }
+.contact-val { color:var(--ink); font-size:0.9rem; }
+.contact-val a { color:var(--teal-mid); text-decoration:none; }
+.contact-val a:hover { color:var(--teal-deep); }
+@media(max-width:700px){ .founder-grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<section class="legal-hero">
+  <div class="container">
+    <p class="section-label" style="color:var(--gold)">Our story</p>
+    <h1>Built from lived experience. Not a pivot.</h1>
+    <p>Ewig Fintech Pvt. Ltd. · Pune, Maharashtra · Founded 2024</p>
+  </div>
+</section>
+
+<section class="section" style="background:var(--cream)">
+  <div class="container">
+    <div class="founder-grid">
+      <div>
+        <div class="founder-photo"><span class="founder-initial">RS</span></div>
+        <div style="margin-top:24px">
+          <h3 style="margin-bottom:4px">Rakesh Sakat</h3>
+          <p style="font-size:0.875rem;color:var(--ink-light);margin-bottom:16px">Founder &amp; CEO · Ewig Fintech Pvt. Ltd.</p>
+          <a href="https://linkedin.com/in/rakeshsakat" target="_blank" class="btn btn-dark" style="font-size:0.8rem;padding:10px 20px">LinkedIn →</a>
+        </div>
+      </div>
+      <div>
+        <p class="section-label">The founder</p>
+        <h2>Why I built Mokssh</h2>
+        <div class="quote-block">
+          <p>"When my father passed, we spent four months in EPFO offices, three weeks on IRDAI helplines, and two years resolving a will dispute — all while grieving. Not one of those things needed to happen."</p>
+        </div>
+        <p>That experience — shared by millions of Indian families every year — is the reason Mokssh exists. Not as a startup pivot. Not as a market opportunity. As a problem I lived through and refused to accept as inevitable.</p>
+        <p style="margin-top:16px">The technology to solve this has existed for years. DigiLocker, EPFO APIs, Aadhaar eSign, UPI — India's digital infrastructure is extraordinary. What was missing was a product that pulled it together into something a family could actually use.</p>
+        <p style="margin-top:16px">Mokssh is that product. The Continuum — our mark — is the promise: your financial legacy flows unbroken to your family, automatically, when they need it most.</p>
+        <div style="margin-top:32px;padding:24px;background:var(--cream-dark);border-radius:var(--radius-md)">
+          <p style="font-size:0.875rem;font-weight:500;margin-bottom:8px;color:var(--ink)">Ewig Fintech Pvt. Ltd.</p>
+          <p style="font-size:0.85rem;color:var(--ink-light);line-height:1.7">Incorporated: 2024 · Pune, Maharashtra<br/>DPIIT Recognised Startup · IRDAI Aggregator Licence: In progress<br/>GST: 27XXXXXXXXXXXXXXX</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-card" id="contact">
+      <h3>Contact us</h3>
+      <div class="contact-row"><span class="contact-label">General</span><span class="contact-val"><a href="mailto:contact@mokssh.in">contact@mokssh.in</a></span></div>
+      <div class="contact-row"><span class="contact-label">Investors</span><span class="contact-val"><a href="mailto:invest@mokssh.in">invest@mokssh.in</a></span></div>
+      <div class="contact-row"><span class="contact-label">Partners</span><span class="contact-val"><a href="mailto:partner@mokssh.in">partner@mokssh.in</a></span></div>
+      <div class="contact-row"><span class="contact-label">Press</span><span class="contact-val"><a href="mailto:press@mokssh.in">press@mokssh.in</a></span></div>
+      <div class="contact-row"><span class="contact-label">Address</span><span class="contact-val">Ewig Fintech Pvt. Ltd. · Pune, Maharashtra 411 001</span></div>
+      <div class="contact-row"><span class="contact-label">Grievance</span><span class="contact-val"><a href="grievance.html">View Grievance Officer →</a></span></div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<script src="components.js"></script>
+</body>
+</html>
