@@ -89,7 +89,7 @@
       <h2>Register for free access.</h2>
       <p>We'll verify your SPARSH ID when the app launches and activate Gold immediately.</p>
       <div id="def-form-wrap">
-        <form class="waitlist-form" onsubmit="submitDefence(event)">
+        <form class="waitlist-form" action="https://formspree.io/f/xykovbnn" method="POST" onsubmit="submitDefence(event)">
           <div class="form-row">
             <div class="form-group"><label>Full name</label><input type="text" id="d-name" placeholder="Col. Rakesh Sakat" required/></div>
             <div class="form-group"><label>SPARSH ID</label><input type="text" id="d-sparsh" placeholder="SPARSH/XXXXXX" required/></div>
@@ -123,10 +123,20 @@
 <div id="footer-placeholder"></div>
 <script src="components.js"></script>
 <script>
+// LINE 126
 function submitDefence(e) {
-  e.preventDefault();
-  document.getElementById('def-form-wrap').style.display = 'none';
-  document.getElementById('def-success').style.display = 'block';
+    e.preventDefault();
+    
+    // Sends data to Formspree silently in the background
+    fetch('https://formspree.io/f/xojrozoy', {
+        method: 'POST',
+        body: new FormData(e.target),
+        headers: { 'Accept': 'application/json' }
+    });
+
+    // Switches the visibility layouts exactly like your original script
+    document.getElementById('def-form-wrap').style.display = 'none';
+    document.getElementById('def-success').style.display = 'block';
 }
 </script>
 </body>
