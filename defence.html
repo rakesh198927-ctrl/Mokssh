@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="Mokssh Defence Gold — Free for life for Indian armed forces personnel and veterans. SPARSH verified. Full Gold access at no cost."/>
 <title>Defence Gold — Mokssh</title>
 <link rel="stylesheet" href="style.css"/>
@@ -11,27 +12,144 @@
     radial-gradient(ellipse 70% 60% at 50% 20%, rgba(245,222,154,0.6) 0%, rgba(245,222,154,0) 60%),
     radial-gradient(ellipse 60% 50% at 90% 80%, rgba(31,196,152,0.18) 0%, rgba(31,196,152,0) 60%),
     linear-gradient(180deg, var(--cream-warm) 0%, var(--bg-base) 100%);
-  min-height: 80vh; display:flex; align-items:center; padding-top:68px; position:relative; overflow:hidden;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  padding-top: 68px;
+  position: relative;
+  overflow: hidden;
   border-bottom: 0.5px solid var(--cream-dark);
 }
-.defence-hero::after { content:''; position:absolute; inset:0; background:repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(184,138,31,0.04) 40px, rgba(184,138,31,0.04) 41px); pointer-events:none; }
-.defence-badge-large { display:inline-flex; align-items:center; gap:10px; background:var(--amber-pale); border:0.5px solid rgba(184,138,31,0.35); border-radius:100px; padding:8px 20px; margin-bottom:28px; position:relative; z-index:1; }
-.defence-badge-large span { font-size:0.72rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--amber-deep); font-weight:600; }
-.defence-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:60px; }
-.defence-step { background:var(--white); border:0.5px solid rgba(22,153,120,0.15); border-radius:var(--radius-md); padding:32px 24px; text-align:center; transition:transform 0.3s, box-shadow 0.3s; }
-.defence-step:hover { transform:translateY(-4px); box-shadow:0 14px 32px rgba(22,153,120,0.10); }
-.defence-step-num { font-family:'Cormorant Garamond',serif; font-size:3rem; font-weight:600; color:var(--teal-soft); display:block; margin-bottom:12px; line-height:1; }
-.defence-step h3 { color:var(--ink); font-size:1.1rem; margin-bottom:10px; }
-.defence-step p { font-size:0.875rem; color:var(--ink-mid); line-height:1.7; }
-.defence-includes { background:var(--white); border:0.5px solid var(--cream-dark); border-radius:var(--radius-lg); padding:40px; margin-top:60px; box-shadow:0 8px 30px rgba(20,48,42,0.04); }
-.defence-includes h3 { color:var(--ink); margin-bottom:24px; }
-.defence-grid-2 { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
-.defence-feature { display:flex; gap:12px; padding:16px 0; border-bottom:0.5px solid var(--cream-dark); }
-.defence-feature:last-child { border-bottom:none; }
-.defence-feature-check { color:var(--teal-mid); font-size:1rem; font-weight:600; flex-shrink:0; margin-top:2px; }
-.defence-feature-title { font-size:0.9rem; font-weight:500; color:var(--ink); margin-bottom:3px; }
-.defence-feature-desc { font-size:0.8rem; color:var(--ink-mid); line-height:1.5; }
-@media(max-width:700px){ .defence-steps{grid-template-columns:1fr;} .defence-grid-2{grid-template-columns:1fr;} }
+.defence-hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(184,138,31,0.04) 40px, rgba(184,138,31,0.04) 41px);
+  pointer-events: none;
+}
+.defence-badge-large {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--amber-pale);
+  border: 0.5px solid rgba(184,138,31,0.35);
+  border-radius: 100px;
+  padding: 8px 20px;
+  margin-bottom: 28px;
+  position: relative;
+  z-index: 1;
+}
+.defence-badge-large span {
+  font-size: 0.72rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--amber-deep);
+  font-weight: 600;
+}
+.defence-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 60px;
+}
+.defence-step {
+  background: var(--white);
+  border: 0.5px solid rgba(22,153,120,0.15);
+  border-radius: var(--radius-md);
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.defence-step:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 32px rgba(22,153,120,0.10);
+}
+.defence-step-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--teal-soft);
+  display: block;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+.defence-step h3 {
+  color: var(--ink);
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.defence-step p {
+  font-size: 0.875rem;
+  color: var(--ink-mid);
+  line-height: 1.7;
+}
+.defence-includes {
+  background: var(--white);
+  border: 0.5px solid var(--cream-dark);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  margin-top: 60px;
+  box-shadow: 0 8px 30px rgba(20,48,42,0.04);
+}
+.defence-includes h3 {
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+.defence-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.defence-feature {
+  display: flex;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 0.5px solid var(--cream-dark);
+}
+.defence-feature:last-child {
+  border-bottom: none;
+}
+.defence-feature-check {
+  color: var(--teal-mid);
+  font-size: 1rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.defence-feature-title {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 3px;
+}
+.defence-feature-desc {
+  font-size: 0.8rem;
+  color: var(--ink-mid);
+  line-height: 1.5;
+}
+.defence-success {
+  display: none;
+  text-align: center;
+  padding: 48px 24px;
+  background: var(--white);
+  border: 0.5px solid rgba(22,153,120,0.2);
+  border-radius: var(--radius-lg);
+  max-width: 560px;
+  margin: 0 auto;
+}
+.defence-success h3 {
+  color: var(--teal-mid);
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+}
+.defence-success p {
+  color: var(--ink-mid);
+  line-height: 1.7;
+}
+@media (max-width: 700px) {
+  .defence-steps { grid-template-columns: 1fr; }
+  .defence-grid-2 { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -41,7 +159,7 @@
   <div class="container">
     <div style="max-width:680px;position:relative;z-index:1">
       <div class="defence-badge-large"><span>🎖 Defence Gold</span></div>
-      <h1 style="color:var(--ink);margin-bottom:24px">Free for life. For those who <em style="color:var(--teal-mid);font-style:italic">protect us.</em></h1>
+      <h1 style="color:var(--ink);margin-bottom:24px">Free for life. For those who <em style="color:var(--teal-mid)">protect us.</em></h1>
       <p style="font-size:1.1rem;color:var(--ink-mid);max-width:520px;line-height:1.8;margin-bottom:40px">Every armed forces personnel and veteran deserves financial security for their family. Mokssh Gold is free, forever — verified through SPARSH in 60 seconds.</p>
       <div style="display:flex;gap:16px;flex-wrap:wrap">
         <a href="#verify" class="btn btn-gold">Verify with SPARSH →</a>
@@ -57,25 +175,85 @@
     <p class="section-label" style="color:var(--teal-deep)">How it works</p>
     <h2 style="color:var(--ink)">Gold access in 60 seconds flat.</h2>
     <div class="defence-steps">
-      <div class="defence-step fade-up"><span class="defence-step-num">01</span><h3>Enter your SPARSH ID</h3><p>Your SPARSH pension portal ID is your verification credential. No paperwork, no queue.</p></div>
-      <div class="defence-step fade-up"><span class="defence-step-num">02</span><h3>Verified instantly</h3><p>Mokssh checks with the SPARSH system in real time. Your service record confirms eligibility automatically.</p></div>
-      <div class="defence-step fade-up"><span class="defence-step-num">03</span><h3>Gold activated — free forever</h3><p>Full Gold access, no payment, no expiry. As long as Mokssh exists, Defence Gold is free.</p></div>
+      <div class="defence-step fade-up">
+        <span class="defence-step-num">01</span>
+        <h3>Enter your SPARSH ID</h3>
+        <p>Your SPARSH pension portal ID is your verification credential. No paperwork, no queue.</p>
+      </div>
+      <div class="defence-step fade-up">
+        <span class="defence-step-num">02</span>
+        <h3>Verified instantly</h3>
+        <p>Mokssh checks with the SPARSH system in real time. Your service record confirms eligibility automatically.</p>
+      </div>
+      <div class="defence-step fade-up">
+        <span class="defence-step-num">03</span>
+        <h3>Gold activated — free forever</h3>
+        <p>Full Gold access, no payment, no expiry. As long as Mokssh exists, Defence Gold is free.</p>
+      </div>
     </div>
 
     <div class="defence-includes">
       <h3>Everything included in Defence Gold</h3>
       <div class="defence-grid-2">
         <div>
-          <div class="defence-feature"><span class="defence-feature-check">✓</span><div><p class="defence-feature-title">Smart Alerts</p><p class="defence-feature-desc">Inactivity-triggered family notification — critical for deployed personnel.</p></div></div>
-          <div class="defence-feature"><span class="defence-feature-check">✓</span><div><p class="defence-feature-title">Insurance Vault — unlimited</p><p class="defence-feature-desc">AGIF, ESM, ECHS, LIC policies. All in one place.</p></div></div>
-          <div class="defence-feature"><span class="defence-feature-check">✓</span><div><p class="defence-feature-title">Digital Will</p><p class="defence-feature-desc">Aadhaar eSigned will covering pension, AGIF, personal assets.</p></div></div>
-          <div class="defence-feature"><span class="defence-feature-check">✓</span><div><p class="defence-feature-title">PF Connect</p><p class="defence-feature-desc">EPF / PPF balance, Form 20 delivery configuration.</p></div></div>
+          <div class="defence-feature">
+            <span class="defence-feature-check">✓</span>
+            <div>
+              <p class="defence-feature-title">Smart Alerts</p>
+              <p class="defence-feature-desc">Inactivity-triggered family notification — critical for deployed personnel.</p>
+            </div>
+          </div>
+          <div class="defence-feature">
+            <span class="defence-feature-check">✓</span>
+            <div>
+              <p class="defence-feature-title">Insurance Vault — unlimited</p>
+              <p class="defence-feature-desc">AGIF, ESM, ECHS, LIC policies. All in one place.</p>
+            </div>
+          </div>
+          <div class="defence-feature">
+            <span class="defence-feature-check">✓</span>
+            <div>
+              <p class="defence-feature-title">Digital Will</p>
+              <p class="defence-feature-desc">Aadhaar eSigned will covering pension, AGIF, personal assets.</p>
+            </div>
+          </div>
+          <div class="defence-feature">
+            <span class="defence-feature-check">✓</span>
+            <div>
+              <p class="defence-feature-title">PF Connect</p>
+              <p class="defence-feature-desc">EPF / PPF balance, Form 20 delivery configuration.</p>
+            </div>
+          </div>
         </div>
         <div>
-          <div class="defence-feature"><span class="defence-feature-check">✓</span><div><p class="defence-feature-title">Up to 5 family members</p><p class="defence-feature-desc">Spouse, children, parents — all with granular access control.</p></div></div>
-          <div class="defence-feature"><span class="defence-feature-check">✓</span><div><p class="defence-feature-title">Emergency Access Cards</p><p class="defence-feature-desc">Scoped financial summary delivered to family when it matters most.</p></div></div>
-          <div class="defence-feature"><span class="defence-feature-check">✓</span><div><p class="defence-feature-title">AI Advisor — unlimited</p><p class="defence-feature-desc">AGIF claim guidance, ECHS procedures, pension queries — in Hindi.</p></div></div>
-          <div class="defence-feature"><span class="defence-feature-check">✓</span><div><p class="defence-feature-title">ECHS integration (coming soon)</p><p class="defence-feature-desc">Health coverage cards and hospital network access.</p></div></div>
+          <div class="defence-feature">
+            <span class="defence-feature-check">✓</span>
+            <div>
+              <p class="defence-feature-title">Up to 5 family members</p>
+              <p class="defence-feature-desc">Spouse, children, parents — all with granular access control.</p>
+            </div>
+          </div>
+          <div class="defence-feature">
+            <span class="defence-feature-check">✓</span>
+            <div>
+              <p class="defence-feature-title">Emergency Access Cards</p>
+              <p class="defence-feature-desc">Scoped financial summary delivered to family when it matters most.</p>
+            </div>
+          </div>
+          <div class="defence-feature">
+            <span class="defence-feature-check">✓</span>
+            <div>
+              <p class="defence-feature-title">AI Advisor — unlimited</p>
+              <p class="defence-feature-desc">AGIF claim guidance, ECHS procedures, pension queries — in Hindi.</p>
+            </div>
+          </div>
+          <div class="defence-feature">
+            <span class="defence-feature-check">✓</span>
+            <div>
+              <p class="defence-feature-title">ECHS integration (coming soon)</p>
+              <p class="defence-feature-desc">Health coverage cards and hospital network access.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -88,45 +266,45 @@
       <p class="section-label" style="color:var(--gold);justify-content:center">Defence Gold</p>
       <h2>Register for free access.</h2>
       <p>We'll verify your SPARSH ID when the app launches and activate Gold immediately.</p>
+
       <div id="def-form-wrap">
         <form class="waitlist-form" action="https://formspree.io/f/xojrozoy" method="POST" onsubmit="submitDefence(event)">
           <div class="form-row">
-            <div class="form-group"><label>Full name</label><input type="text" id="d-name" placeholder="Col. Rakesh Sakat" required/></div>
-            <div class="form-group"><label>SPARSH ID</label><input type="text" id="d-sparsh" placeholder="SPARSH/XXXXXX" required/></div>
+            <div class="form-group">
+              <label for="d-name">Full name</label>
+              <input type="text" name="name" id="d-name" placeholder="Col. Rakesh Sakat" required/>
+            </div>
+            <div class="form-group">
+              <label for="d-sparsh">SPARSH ID</label>
+              <input type="text" name="sparsh_id" id="d-sparsh" placeholder="SPARSH/XXXXXX" required/>
+            </div>
           </div>
           <div class="form-row">
-            <div class="form-group"><label>Mobile number</label><input type="tel" id="d-phone" placeholder="98765 43210" maxlength="10" required/></div>
-            <form class="waitlist-form" action="https://formspree.io/f/xojrozoy" method="POST" onsubmit="submitDefence(event)">
-    <div class="form-row">
-        <div class="form-group">
-            <label>Full name</label>
-            <input type="text" name="name" id="d-name" placeholder="Col. Rakesh Sakat" required/>
-        </div>
-        <div class="form-group">
-            <label>SPARSH ID</label>
-            <input type="text" name="sparsh_id" id="d-sparsh" placeholder="SPARSH/XXXXXX" required/>
-        </div>
-    </div>
-    <div class="form-row">
-        <div class="form-group">
-            <label>Mobile number</label>
-            <input type="tel" name="phone" id="d-phone" placeholder="98765 43210" maxlength="10" required/>
-        </div>
-        <div class="form-group">
-            <label>Service type</label>
-            <select name="service_type" id="d-service" required>
+            <div class="form-group">
+              <label for="d-phone">Mobile number</label>
+              <input type="tel" name="phone" id="d-phone" placeholder="98765 43210" maxlength="10" pattern="[0-9]{10}" required/>
+            </div>
+            <div class="form-group">
+              <label for="d-service">Service type</label>
+              <select name="service_type" id="d-service" required>
                 <option value="">Select…</option>
                 <option value="army">Indian Army</option>
                 <option value="navy">Indian Navy</option>
                 <option value="af">Indian Air Force</option>
                 <option value="veteran">Veteran / Ex-serviceman</option>
                 <option value="family">War widow / Family</option>
-            </select>
-        </div>
-    </div>
-    <button type="submit" class="btn btn-gold">Register for Defence Gold →</button>
-    <p class="waitlist-note">Your SPARSH ID is used only for verification. It is never stored in plain text.</p>
-</form>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-gold">Register for Defence Gold →</button>
+          <p class="waitlist-note">Your SPARSH ID is used only for verification. It is never stored in plain text.</p>
+        </form>
+      </div>
+
+      <div id="def-success" class="defence-success">
+        <h3>Registered ✓</h3>
+        <p>We'll verify your SPARSH ID at launch and activate Defence Gold immediately. Jai Hind.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -134,20 +312,19 @@
 <div id="footer-placeholder"></div>
 <script src="components.js"></script>
 <script>
-// LINE 126
 function submitDefence(e) {
-    e.preventDefault();
-    
-    // Sends data to Formspree silently in the background
-    fetch('https://formspree.io/f/xojrozoy', {
-        method: 'POST',
-        body: new FormData(e.target),
-        headers: { 'Accept': 'application/json' }
-    });
+  e.preventDefault();
 
-    // Switches the visibility layouts exactly like your original script
-    document.getElementById('def-form-wrap').style.display = 'none';
-    document.getElementById('def-success').style.display = 'block';
+  fetch('https://formspree.io/f/xojrozoy', {
+    method: 'POST',
+    body: new FormData(e.target),
+    headers: { 'Accept': 'application/json' }
+  }).catch(function (err) {
+    console.error('Formspree submission error:', err);
+  });
+
+  document.getElementById('def-form-wrap').style.display = 'none';
+  document.getElementById('def-success').style.display = 'block';
 }
 </script>
 </body>
