@@ -96,26 +96,37 @@
           </div>
           <div class="form-row">
             <div class="form-group"><label>Mobile number</label><input type="tel" id="d-phone" placeholder="98765 43210" maxlength="10" required/></div>
-            <div class="form-group"><label>Service type</label>
-              <select id="d-service">
+            <form class="waitlist-form" action="https://formspree.io/f/xojrozoy" method="POST" onsubmit="submitDefence(event)">
+    <div class="form-row">
+        <div class="form-group">
+            <label>Full name</label>
+            <input type="text" name="name" id="d-name" placeholder="Col. Rakesh Sakat" required/>
+        </div>
+        <div class="form-group">
+            <label>SPARSH ID</label>
+            <input type="text" name="sparsh_id" id="d-sparsh" placeholder="SPARSH/XXXXXX" required/>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group">
+            <label>Mobile number</label>
+            <input type="tel" name="phone" id="d-phone" placeholder="98765 43210" maxlength="10" required/>
+        </div>
+        <div class="form-group">
+            <label>Service type</label>
+            <select name="service_type" id="d-service" required>
                 <option value="">Select…</option>
                 <option value="army">Indian Army</option>
                 <option value="navy">Indian Navy</option>
                 <option value="af">Indian Air Force</option>
                 <option value="veteran">Veteran / Ex-serviceman</option>
                 <option value="family">War widow / Family</option>
-              </select>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-gold">Register for Defence Gold →</button>
-          <p class="waitlist-note">Your SPARSH ID is used only for verification. It is never stored in plain text.</p>
-        </form>
-      </div>
-      <div class="form-success" id="def-success">
-        <div class="success-icon">🎖</div>
-        <h3>Registered. Jai Hind.</h3>
-        <p>We'll verify your SPARSH ID and activate Gold access when Mokssh launches. Your family's financial security is our commitment.</p>
-      </div>
+            </select>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-gold">Register for Defence Gold →</button>
+    <p class="waitlist-note">Your SPARSH ID is used only for verification. It is never stored in plain text.</p>
+</form>
     </div>
   </div>
 </section>
