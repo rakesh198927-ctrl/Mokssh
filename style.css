@@ -160,45 +160,6 @@ p  { line-height: 1.75; color: var(--ink-mid); }
 }
 .hero .btn-outline:hover { border-color: var(--teal-deep); background: rgba(20,48,42,0.04); color: var(--teal-deep); }
 
-/* Hero Logo Lockup */
-.hero-logo {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  background: rgba(10, 30, 20, 0.75);
-  border: 1px solid rgba(22, 153, 120, 0.35);
-  border-radius: 12px;
-  padding: 10px 20px 10px 12px;
-  backdrop-filter: blur(8px);
-  margin-bottom: 28px;
-}
-.hero-logo-mark {
-  width: 44px;
-  height: 44px;
-  flex-shrink: 0;
-}
-.hero-logo-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.hero-logo-name {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #f5f0e8;
-  letter-spacing: -0.3px;
-  line-height: 1;
-}
-.hero-logo-tagline {
-  font-family: "Inter", sans-serif;
-  font-size: 0.58rem;
-  font-weight: 500;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: #a0c8b8;
-}
-
 /* ─── BUTTONS ─── */
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
