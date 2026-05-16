@@ -160,6 +160,42 @@
   </div>
 </section>
 
+  <!-- ═══ DEMO VIDEO ═══════════════════════════════════════════════════ -->
+<section id="demo" style="padding:96px 48px;background:var(--ink);position:relative;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 50%,rgba(30,107,85,0.15) 0%,transparent 65%);pointer-events:none;"></div>
+  <div class="section-wrap" style="position:relative;z-index:1;">
+    <div style="text-align:center;margin-bottom:48px;">
+      <div class="section-eyebrow sr" style="color:var(--greenl);justify-content:center;">Watch Mokssh in Action</div>
+      <h2 class="section-title sr d1" style="color:var(--white);text-align:center;">See exactly how<br><em style="color:#A8E6C8">Mokssh protects your family.</em></h2>
+      <p style="font-size:16px;color:rgba(255,255,255,0.5);max-width:520px;margin:16px auto 0;line-height:1.75;" class="sr d2">A full walkthrough of all 12 workflows — from your first policy import to Smart Alerts delivering your complete financial kit to your family.</p>
+    </div>
+    <div class="sr d3" style="max-width:900px;margin:0 auto;border-radius:20px;overflow:hidden;box-shadow:0 24px 80px rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.08);background:#000;position:relative;">
+      <video
+        id="demoVideo"
+        autoplay
+        muted
+        loop
+        playsinline
+        controls
+        preload="metadata"
+        style="width:100%;display:block;max-height:506px;background:#000;"
+        controlsList="nodownload"
+        onerror="document.getElementById('videoError').style.display='flex';this.style.display='none';"
+      >
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div id="videoError" style="display:none;align-items:center;justify-content:center;flex-direction:column;gap:12px;padding:60px 24px;background:#111;color:rgba(255,255,255,0.5);font-family:var(--mono);font-size:12px;letter-spacing:0.08em;text-align:center;">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        VIDEO FILE NOT FOUND<br>
+        <span style="opacity:0.4">Place <strong style="color:rgba(255,255,255,0.6)">video.mp4</strong> in the same folder as this HTML file</span>
+      </div>
+      <div style="position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--green2),var(--greenl));opacity:0.7;"></div>
+    </div>
+    <p style="text-align:center;font-family:var(--mono);font-size:10px;color:rgba(255,255,255,0.25);letter-spacing:0.15em;margin-top:20px;">MOKSSH PRODUCT DEMO · EWIG FINTECH PVT. LTD. · 2026</p>
+  </div>
+</section>
+
 <!-- PRICING -->
 <section class="section pricing" id="pricing">
   <div class="container">
