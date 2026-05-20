@@ -61,9 +61,9 @@ const FOOTER_HTML = `
         <ul class="footer-links">
           <li><a href="about.html">About us</a></li>
           <li><a href="about.html#contact">Contact</a></li>
-          <li><a href=“mailto:contact@ewigfintech.com">contact@ewigfintech.com</a></li>
+          <li><a href="mailto:contact@ewigfintech.com">contact@ewigfintech.com</a></li>
           <li><a href="mailto:contact@mokssh.in">contact@mokssh.in</a></li>
-          <li><a href="mailto:invest@mokssh.in”>invest@mokssh.in</a></li>
+          <li><a href="mailto:invest@mokssh.in">invest@mokssh.in</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -86,7 +86,6 @@ const FOOTER_HTML = `
     </div>
   </div>
 </footer>`;
-
 // Arm fade-up animations as early as possible — before DOMContentLoaded if we can.
 // If JS never loads, the .js-ready class is never added, and content stays visible.
 document.documentElement.classList.add('js-ready');
