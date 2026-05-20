@@ -61,7 +61,7 @@ const FOOTER_HTML = `
         <ul class="footer-links">
           <li><a href="about.html">About us</a></li>
           <li><a href="about.html#contact">Contact</a></li>
-          <li><a href=“mailto:contact@ewigfintech.com">contact@ewigfintech.com/a></li>
+          <li><a href=“mailto:contact@ewigfintech.com">contact@ewigfintech.com</a></li>
           <li><a href="mailto:contact@mokssh.in">contact@mokssh.in</a></li>
           <li><a href="mailto:invest@mokssh.in”>invest@mokssh.in</a></li>
         </ul>
