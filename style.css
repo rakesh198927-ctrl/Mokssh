@@ -161,86 +161,90 @@ p  { line-height: 1.75; color: var(--ink-mid); }
 }
 .hero .btn-outline:hover { border-color: var(--teal-deep); background: rgba(20,48,42,0.04); color: var(--teal-deep); }
 
-/* --- CONTINUUM INTEGRATED CARD STYLES --- */
-.hero-grid .how-visual {
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(31, 196, 152, 0.25);
-  border-radius: 24px;
-  padding: 40px 32px;
+/* --- BRAND NEW SPECIFICATION STYLES --- */
+
+/* Card Container Layout */
+.how-visual {
+  background-color: #11261c;
+  border: 1px solid rgba(30, 107, 85, 0.3);
+  border-radius: 1rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 480px;
   width: 100%;
   max-width: 460px;
   margin: 0 auto;
-  align-self: center;
-  box-shadow: 
-    0 4px 24px -1px rgba(20, 48, 42, 0.04),
-    0 24px 64px -12px rgba(20, 48, 42, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
   box-sizing: border-box;
 }
 
+/* 1. Top Section: Continuum Mark Graphic & Label */
 .how-mark {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
-  width: 100%;
+  justify-content: center;
+  margin-bottom: 2.5rem; /* Pushes the graphic cleanly above the grid */
 }
 
 .how-mark svg {
-  display: block;
   max-width: 100%;
   height: auto;
-  filter: drop-shadow(0 8px 16px rgba(30, 107, 85, 0.12));
+  opacity: 0.95;
 }
 
 .how-mark-label {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
+  font-family: inherit;
+  font-size: 11px;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--teal-deep, #14302a);
-  opacity: 0.8;
+  color: #6FCBA8;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  text-align: center;
 }
 
+/* 2. Bottom Section: 4 Tiles Grid Layout */
 .how-stat-row {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  row-gap: 24px;
-  column-gap: 20px;
   width: 100%;
-  border-top: 1px solid rgba(20, 48, 42, 0.08);
-  padding-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Forms the 2x2 grid */
+  gap: 1rem;
 }
 
+/* Individual Tiles Style */
 .how-stat {
+  background-color: rgba(11, 27, 20, 0.6);
+  border: 1px solid rgba(12, 28, 25, 0.5);
+  border-radius: 0.75rem;
+  padding: 1.2rem 1rem;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  justify-content: center;
 }
 
+/* Tile Numbers / Values */
 .how-stat-v {
-  font-family: 'DM Sans', sans-serif;
+  font-family: serif;
   font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--teal-mid, #169978);
-  line-height: 1;
+  font-weight: 300;
+  color: #A8E6C8;
+  line-height: 1.2;
 }
 
+/* Tile Descriptions */
 .how-stat-l {
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.8rem;
-  line-height: 1.45;
-  color: var(--ink-mid, #4a5552);
-  font-weight: 400;
+  font-size: 11px;
+  color: #A2B2AC;
+  margin-top: 0.35rem;
+  line-height: 1.4;
 }
 
-/* Responsive Overrides */
+/* Global Grid Layout Fallback Rules for Desktop & Responsiveness */
 @media (max-width: 991px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -257,10 +261,24 @@ p  { line-height: 1.75; color: var(--ink-mid); }
   }
 }
 
-@media (max-width: 400px) {
+/* Responsive adjustments for mobile viewports */
+@media (max-width: 640px) {
+  .how-visual {
+    padding: 1.5rem;
+    min-height: auto;
+  }
+  
+  .how-mark {
+    margin-bottom: 1.75rem;
+  }
+  
   .how-stat-row {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr; /* Stacks tiles linearly on very small screens */
+    gap: 0.75rem;
+  }
+  
+  .how-stat {
+    padding: 1rem;
   }
 }
 /* ─── BUTTONS ─── */
