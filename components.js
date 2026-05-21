@@ -44,7 +44,7 @@ const FOOTER_HTML = `
           <span style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:#14302A">Mokssh</span>
         </a>
         <p>India's first family financial planner. Protecting every Indian family's financial legacy through intelligent automation.</p>
-        <p style="margin-top:12px;font-size:0.78rem;color:#8A9590">A product of Ewig Fintech Pvt. Ltd.<br>CIN: U74999MH2024PTC000000 · Pune, Maharashtra</p>
+        <p style="margin-top:12px;font-size:0.78rem;color:#8A9590">A product of Ewig Fintech Pvt. Ltd.<br>Pune, Maharashtra</p>
       </div>
       <div class="footer-col">
         <h4>Product</h4>
