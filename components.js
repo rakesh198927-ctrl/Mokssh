@@ -77,7 +77,7 @@ const FOOTER_HTML = `
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Ewig Fintech Pvt. Ltd. All rights reserved. · IRDAI Aggregator Licence: In progress · RBI: Compliant</p>
+      <p>© 2026 Ewig Fintech Pvt. Ltd. All rights reserved.</p>
       <div class="footer-legal">
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
